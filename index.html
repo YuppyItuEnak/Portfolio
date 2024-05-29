@@ -23,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fw-semibold" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="#">About</a>
+                        <a class="nav-link fw-semibold" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="#">Work</a>
+                        <a class="nav-link fw-semibold" href="#work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="#">Contact</a>
+                        <a class="nav-link fw-semibold" href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -42,22 +42,22 @@
     </nav>
 
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-8">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
                 <h3 class="fw-semibold">Hi! I am</h3>
                 <h1 class="fw-bold">Fadhil Muhammad Rizki Bahri</h1>
                 <p>I am a Software Engineer based in Indonesia</p>
-                <a class="btn" href="images/potrait.png" download>Resume</a>
+                <a class="btn button" href="images/potrait.png" download>Resume</a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
                 <img src="images/potrait.png" alt="potrait">
             </div>
         </div>
 
-        <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-            <a class="text-decoration-none text-dark" href="#about">More info</a>
+        <a href="#about" class="arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-decoration-none text-dark" href="#about">More info</div>
             <img id="arrow" class="mt-3" src="images/arrow.svg" alt="arrow-icon">
-        </div>
+        </a>
     </section>
 
     <section id="about" class="abaout container">
@@ -111,27 +111,72 @@
 
     <section id="work" class="work container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-5">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos odit unde amet soluta. Nulla
                     eius iste dicta odio neque dolorum, dolor harum enim! Eius suscipit architecto dolorem eveniet
                     distinctio quia!</p>
             </div>
-            <div class="col work-img">
+            <div class="col-12 col-6 work-img">
                 <div id="work-1" class="work-img-item">
                     <img src="images/work-1.png" alt="work 1">
                 </div>
                 <div id="work-2" class="work-img-item">
-                    <img src="images/work-2.png" alt="work 2" >
+                    <img src="images/work-2.png" alt="work 2">
                 </div>
                 <div id="work-3" class="work-img-item">
-                    <img src="images/work-3.png" alt="work 3" >
+                    <img src="images/work-3.png" alt="work 3">
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-lg-6">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus illum qui quos
+                    repellat
+                    pariatur, beatae a corporis rem deleniti! Delectus molestias magnam pariatur! Accusamus modi amet
+                    voluptatem fuga quam consequatur corporis quibusdam eveniet reiciendis, itaque odio, eaque odit
+                    ullam
+                    quae libero ex rerum dolore temporibus minus voluptas? Et, corporis.</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Facebook.svg" alt="Facebook icon">
+                        <p class="mb-0 ms-2">Fadhil</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Twitter.svg" alt="Twitter icon">
+                        <p class="mb-0 ms-2">@Fadhil</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Instagram.svg" alt="Instagram icon">
+                        <p class="mb-0 ms-2">@Fadhilm_r_b</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sub" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="sub" placeholder="Your Subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mess" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="mess" placeholder="Your Message">
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-    
+    </section>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

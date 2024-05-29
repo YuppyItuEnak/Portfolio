@@ -15,3 +15,24 @@ function toggleDetail(e) {
 
 
 }
+
+function onFormSubmit(e){
+    e.preventDefault()
+    const email = $('#email')
+    const subject = $('#sub')
+    const message = $('#mess')
+
+    if (!$(email).val()) {
+        alert("Email is required!")
+    }else if (!$(subject).val()) {
+        alert("Subject is required!")
+    }else if (!$(message).val()) {
+        alert("Message is required!")
+    }else{
+        alert("Form Submitted")
+        $(email).val("")
+        $(subject).val("")
+        $(message).val("")
+        
+    }
+}
